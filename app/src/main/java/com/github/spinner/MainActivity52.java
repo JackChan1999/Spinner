@@ -17,7 +17,26 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
+/**
+ * ============================================================
+ * Copyright：${TODO}有限公司版权所有 (c) 2017
+ * Author：   AllenIverson
+ * Email：    815712739@qq.com
+ * GitHub：   https://github.com/JackChen1999
+ * 博客：     http://blog.csdn.net/axi295309066
+ * 微博：     AndroidDeveloper
+ * <p>
+ * Project_Name：Spinner
+ * Package_Name：com.github.spinner
+ * Version：1.0
+ * time：2016/2/28 17:18
+ * des ：自定义组合控件，Spinner下拉选择框控件
+ * gitVersion：$Rev$
+ * updateAuthor：$Author$
+ * updateDate：$Date$
+ * updateDes：${TODO}
+ * ============================================================
+ */
 public class MainActivity52 extends Activity implements OnClickListener{
 	private EditText editText;
 	private ImageView iv_select;
@@ -74,8 +93,7 @@ public class MainActivity52 extends Activity implements OnClickListener{
 	
 	private void showNumberList(){
 		if(popupWindow==null){
-			popupWindow = new PopupWindow(listView, 
-					editText.getWidth(), popupWindowHeight);
+			popupWindow = new PopupWindow(listView, editText.getWidth(), popupWindowHeight);
 		}
 		//要让其中的view获取焦点，必须设置为true
 		popupWindow.setFocusable(true);
@@ -125,8 +143,8 @@ public class MainActivity52 extends Activity implements OnClickListener{
 					notifyDataSetChanged();
 					
 					int listviewHeight = view.getHeight()*list.size();
-					popupWindow.update(editText.getWidth(), listviewHeight>popupWindowHeight
-							?popupWindowHeight:listviewHeight);
+					popupWindow.update(editText.getWidth(),
+							listviewHeight>popupWindowHeight ?popupWindowHeight:listviewHeight);
 					
 					if(list.size()==0){
 						popupWindow.dismiss();

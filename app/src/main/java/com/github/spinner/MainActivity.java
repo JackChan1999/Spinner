@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
         // 初始化listview 数据
         mList = new ArrayList<String>();
         for (int i = 0; i < 200; i++) {
-            mList.add("aaabbbccc" + i);
+            mList.add("1880191116" + i);
         }
         lvList.setAdapter(new MyAdapter());
         lvList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -118,13 +118,10 @@ public class MainActivity extends Activity {
                             ViewGroup parent) {
             ViewHolder holder;
             if (convertView == null) {
-                convertView = View.inflate(getApplicationContext(),
-                        R.layout.list_item, null);
+                convertView = View.inflate(getApplicationContext(), R.layout.list_item, null);
                 holder = new ViewHolder();
-                holder.tvContent = (TextView) convertView
-                        .findViewById(R.id.tv_content);
-                holder.ivDelete = (ImageView) convertView
-                        .findViewById(R.id.iv_delete);
+                holder.tvContent = (TextView) convertView.findViewById(R.id.tv_content);
+                holder.ivDelete = (ImageView) convertView.findViewById(R.id.iv_delete);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();

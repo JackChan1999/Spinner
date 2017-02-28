@@ -16,7 +16,26 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
+/**
+ * ============================================================
+ * Copyright：${TODO}有限公司版权所有 (c) 2017
+ * Author：   AllenIverson
+ * Email：    815712739@qq.com
+ * GitHub：   https://github.com/JackChen1999
+ * 博客：     http://blog.csdn.net/axi295309066
+ * 微博：     AndroidDeveloper
+ * <p>
+ * Project_Name：Spinner
+ * Package_Name：com.github.spinner
+ * Version：1.0
+ * time：2016/2/28 17:18
+ * des ：自定义组合控件，Spinner下拉选择框控件
+ * gitVersion：$Rev$
+ * updateAuthor：$Author$
+ * updateDate：$Date$
+ * updateDes：${TODO}
+ * ============================================================
+ */
 public class MainActivity66 extends Activity {
 
 	private ListView lvList;
@@ -44,7 +63,7 @@ public class MainActivity66 extends Activity {
 		
 		mList = new ArrayList<String>();
 		for (int i = 0; i < 200; i++) {
-			mList.add("aaabbbccc" + i);
+			mList.add("18801911161" + i);
 		}
 
 		lvList.setAdapter(new MyAdapter());

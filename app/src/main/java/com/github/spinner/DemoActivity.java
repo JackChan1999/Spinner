@@ -13,7 +13,26 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * ============================================================
+ * Copyright：${TODO}有限公司版权所有 (c) 2017
+ * Author：   AllenIverson
+ * Email：    815712739@qq.com
+ * GitHub：   https://github.com/JackChen1999
+ * 博客：     http://blog.csdn.net/axi295309066
+ * 微博：     AndroidDeveloper
+ * <p>
+ * Project_Name：Spinner
+ * Package_Name：com.github.spinner
+ * Version：1.0
+ * time：2016/2/28 17:18
+ * des ：自定义组合控件，Spinner下拉选择框控件
+ * gitVersion：$Rev$
+ * updateAuthor：$Author$
+ * updateDate：$Date$
+ * updateDes：${TODO}
+ * ============================================================
+ */
 public class DemoActivity extends Activity implements OnItemClickListener {
 
 	private SpinnerView mSpinnerView;
@@ -30,7 +49,7 @@ public class DemoActivity extends Activity implements OnItemClickListener {
 		// 模拟数据
 		mDatas = new ArrayList<String>();
 		for (int i = 0; i < 200; i++) {
-			mDatas.add(100000 + i + "");
+			mDatas.add("18801911161" + i);
 		}
 
 		mSpinnerView.setAdapter(new MyAdapter());
@@ -76,12 +95,9 @@ public class DemoActivity extends Activity implements OnItemClickListener {
 				// 设置标记
 				convertView.setTag(holder);
 				// 初始化item的view
-				holder.ivDelete = (ImageView) convertView
-						.findViewById(R.id.iv_delete);
-				holder.ivUser = (ImageView) convertView
-						.findViewById(R.id.iv_user);
-				holder.tvTitle = (TextView) convertView
-						.findViewById(R.id.tv_title);
+				holder.ivDelete = (ImageView) convertView.findViewById(R.id.iv_delete);
+				holder.ivUser = (ImageView) convertView.findViewById(R.id.iv_user);
+				holder.tvTitle = (TextView) convertView.findViewById(R.id.tv_title);
 
 			} else {
 				// 有复用
@@ -97,7 +113,6 @@ public class DemoActivity extends Activity implements OnItemClickListener {
 				@Override
 				public void onClick(View v) {
 					mDatas.remove(data);
-
 					// UI刷新
 					notifyDataSetChanged();
 				}
@@ -124,6 +139,5 @@ public class DemoActivity extends Activity implements OnItemClickListener {
 
 		// 隐藏popu
 		mSpinnerView.dismiss();
-
 	}
 }

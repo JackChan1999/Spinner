@@ -59,7 +59,7 @@ public class MainActivity56 extends Activity implements OnClickListener {
         //准备数据
         msgList = new ArrayList<String>();
         for (int i = 0; i < 200; i++) {
-            msgList.add(i + "aaaaaaaaaaaaa" + i);
+            msgList.add(i + "188019111" + i);
         }
         //实例化ListView
         listView = new ListView(this);
@@ -72,15 +72,13 @@ public class MainActivity56 extends Activity implements OnClickListener {
         listView.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String msg = msgList.get(position);
                 et_input.setText(msg);//把文本设置到输入框
                 if (window != null && window.isShowing()) {
                     window.dismiss();
                     window = null;
-
                 }
 
             }
@@ -127,7 +125,6 @@ public class MainActivity56 extends Activity implements OnClickListener {
 
                     //2.刷新页面
                     notifyDataSetChanged();//getCount()执行--》getView();
-
                 }
             });
 
@@ -165,7 +162,7 @@ public class MainActivity56 extends Activity implements OnClickListener {
                     // 设置视图
                     window.setContentView(listView);//设置视图
                     //设置点击外边消掉PopupWindow
-                    //				window.setOutsideTouchable(true);
+                    //window.setOutsideTouchable(true);
 
                     window.setFocusable(true);
                 }
