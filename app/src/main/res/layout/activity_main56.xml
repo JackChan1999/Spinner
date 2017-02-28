@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:singleLine="true"
+        android:paddingRight="40dip"
+        android:id="@+id/et_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:hint="请输入信息" />
+
+    <ImageView
+        android:id="@+id/iv_down_arrow"
+        android:padding="8dip"
+        android:layout_alignTop="@id/et_input"
+        android:layout_alignRight="@id/et_input"
+        android:src="@mipmap/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
