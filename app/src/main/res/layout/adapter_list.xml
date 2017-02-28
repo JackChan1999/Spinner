@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+    
+    <TextView android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/user"
+        android:gravity="center_vertical"
+        android:drawablePadding="3dp"
+        android:id="@+id/tv_number"
+        android:text="90000"/>
+    
+    <ImageButton android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_delete"
+        android:background="@mipmap/delete"/>
+
+</LinearLayout>
