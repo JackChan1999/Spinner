@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:src="@drawable/user" />
+        android:src="@mipmap/user" />
 
     <TextView
         android:id="@+id/tv_title"
@@ -26,6 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/delete" />
+        android:src="@mipmap/delete" />
 
 </RelativeLayout>
